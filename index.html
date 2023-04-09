@@ -15,7 +15,7 @@
         <center>
             <div class="controls">
                 <input class="search" type="search" placeholder="search">
-                <button class="buttontwo">Add task</button>
+                <button class="add-button">Add task</button>
             </div>
         </center>
     </div>
@@ -23,9 +23,16 @@
     <div class="taskForm">
         <h1>Create Task</h1>
         <form class="form">
-            <input class="form" type="name" placeholder="Name">
-            <input class="form" type="date"  placeholder="Date">
-            <select class="form"  placeholder="Select"></select>
+            <label>Name</label>
+            <input id="name" onclick=value value="Name" class="form" type="name" placeholder="Name">
+            <label>Due Date</label>
+            <input id="date" value="Date" onclick=value class="form" type="date"  placeholder="Date">
+            <label>Status</label>
+            <select id="status" onclick=value class="form"  placeholder="Select" name="status"> 
+                <option value="done">Done</option>
+                <option value="not done">Not Done</option>
+                <option value="in progress">In Progress</option>
+            </select>
 
             <div class="button-container">
                 <button class="cancelButton">Cancel</button>
@@ -34,7 +41,14 @@
         </form>
     </div> 
 
-    <script defer src="javascript.js"></script>
+    <!-- task will be added here -->
+    <div class="task-list">
+
+    </div>
+
+    <script defer src="javascript.js">
+
+    </script>
 
 </body>
 </html>

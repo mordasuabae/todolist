@@ -41,7 +41,7 @@ form{
 .form{
     display: block;
     border: none;
-    margin: 50px auto;
+    margin: 21px auto;
     width:100%;
     height: 40px;
 }
@@ -69,7 +69,7 @@ button{
     display: flex;
     justify-content: center;
 }
-.buttontwo{
+.add-button{
     background-color: pink;
     color: white;
     border: 1px solid white;
@@ -88,4 +88,10 @@ button{
     border: 1px solid white;
     border-radius: 2px;
     height: 100px;
+}
+
+.task-container {
+
+    padding: 20px;
+    border: solid 1px grey;
 }
